@@ -1,0 +1,11 @@
+scripts:
+  server:
+    - cd ecommerce && python manage.py runserver
+  makemigrations:
+    - cd ecommerce && python manage.py makemigrations
+  migrate:
+    - cd ecommerce && python manage.py migrate
+  test:
+    - cd ecommerce && python manage.py test
+  freeze:
+    - pip freeze > requirements.txt
